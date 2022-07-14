@@ -4,6 +4,8 @@ import './dummy_data.dart';
 import './category_item.dart';
 
 class CategoriesScrenn extends StatelessWidget {
+  CategoriesScrenn(String id, String title);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,8 +14,9 @@ class CategoriesScrenn extends StatelessWidget {
       body: GridView(
         children: DUMMY_CATEGORY
           .map((catData) => CategoryItem(
+            catData.id,
             catData.title, 
-            catData.color
+            catData.color,
             ),
 
           )

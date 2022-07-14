@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:three_app/categories_screen.dart';
 
+import 'package:three_app/category_item.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,13 +24,15 @@ class MyApp extends StatelessWidget {
             color: Color.fromRGBO(20, 51, 51, 1),
           ),
           headline6: TextStyle(
+            
             fontSize: 20,
             fontFamily: 'RobotoCondensed',
             fontWeight: FontWeight.bold,
+            
           )
         ),
       ),
-      home: CategoriesScrenn(),
+      // home: CategoriesScrenn(),
     );
   }
 }
